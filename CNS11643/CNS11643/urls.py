@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from word_api.views import word_api
+from word_api.views import  word_encode
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('word/<str:word>/',word_api),
+    path('word/<str:word>/',word_encode),
 ]
