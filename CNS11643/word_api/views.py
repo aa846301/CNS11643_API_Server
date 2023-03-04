@@ -4,6 +4,6 @@ from django.http import JsonResponse
 
 
 
-def word_view(request):
+def word_api(request):
     data = {'word': '你好，世界！'}
     return JsonResponse(data)
